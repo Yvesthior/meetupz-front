@@ -1,7 +1,7 @@
 import React from "react";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const App = () => (
   <div>
@@ -10,9 +10,10 @@ const App = () => (
       <Main />
     </div>
     <div className="fixed-action-btn">
-      <Link to="/meetups/add" className="btn-floating btn-large red">
+      {/* <Link to="/meetups/add" className="btn-floating btn-large red">
         <i className="fa fa-plus"></i>
-      </Link>
+      </Link> */}
+      <a href="/meetups/add" className="btn-floating btn-large red" ><i className="fa fa-plus"></i></a>
     </div>
   </div>
 );
